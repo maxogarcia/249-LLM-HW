@@ -1,0 +1,71 @@
+[run] C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 Assignments\LLM HW1\DeepDataMiningLearning\DeepDataMiningLearning\llm\outputs\nanolm\sweeps\char_models\gpt_modern_s42
+[run] device: cuda (precision=bfloat16, compile=yes) | world_size=1
+C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 Assignments\LLM HW1\DeepDataMiningLearning\DeepDataMiningLearning\llm\nanolm\data.py:570: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  return (torch.tensor(base, dtype=torch.int32, device=device),
+[data] tinyshakespeare_char_tail100 | tokenizer=char vocab=65 | train 1,003,854 tok | val 111,540 tok
+[model] gpt: 3,162,624 params (3,145,984 non-embedding)
+[train] 2000 steps x 8,192 tokens/step (16.32 passes over train) | optimizer=adamw schedule=cosine
+step     50 | loss 3.0906 | lr 5.00e-04 | 210.0k tok/s | 2s
+step    100 | loss 2.3197 | lr 1.00e-03 | 254.2k tok/s | 4s
+step    150 | loss 1.9652 | lr 9.88e-04 | 247.9k tok/s | 5s
+step    200 | loss 1.7824 | lr 9.78e-04 | 265.7k tok/s | 7s
+step    250 | loss 1.6760 | lr 9.66e-04 | 250.8k tok/s | 8s
+  eval step    250 | val_loss 1.7537 | val_bpb 2.5301 | acc 48.1% | 8s
+step    300 | loss 1.6086 | lr 9.51e-04 | 247.4k tok/s | 10s
+step    350 | loss 1.5600 | lr 9.34e-04 | 232.2k tok/s | 12s
+step    400 | loss 1.5235 | lr 9.14e-04 | 254.5k tok/s | 13s
+step    450 | loss 1.4884 | lr 8.93e-04 | 260.7k tok/s | 15s
+step    500 | loss 1.4727 | lr 8.69e-04 | 234.9k tok/s | 17s
+  eval step    500 | val_loss 1.6189 | val_bpb 2.3356 | acc 52.3% | 17s
+step    550 | loss 1.4506 | lr 8.43e-04 | 247.6k tok/s | 18s
+step    600 | loss 1.4277 | lr 8.15e-04 | 232.4k tok/s | 20s
+step    650 | loss 1.4121 | lr 7.86e-04 | 246.7k tok/s | 22s
+step    700 | loss 1.3940 | lr 7.55e-04 | 259.0k tok/s | 23s
+step    750 | loss 1.3798 | lr 7.23e-04 | 230.2k tok/s | 25s
+  eval step    750 | val_loss 1.5529 | val_bpb 2.2404 | acc 54.1% | 25s
+step    800 | loss 1.3615 | lr 6.90e-04 | 218.8k tok/s | 27s
+step    850 | loss 1.3498 | lr 6.56e-04 | 211.4k tok/s | 29s
+step    900 | loss 1.3416 | lr 6.21e-04 | 224.4k tok/s | 31s
+step    950 | loss 1.3323 | lr 5.86e-04 | 218.2k tok/s | 33s
+step   1000 | loss 1.3252 | lr 5.51e-04 | 226.0k tok/s | 34s
+  eval step   1000 | val_loss 1.5156 | val_bpb 2.1866 | acc 55.4% | 34s
+step   1050 | loss 1.3009 | lr 5.15e-04 | 219.5k tok/s | 36s
+step   1100 | loss 1.3042 | lr 4.80e-04 | 208.1k tok/s | 38s
+step   1150 | loss 1.2919 | lr 4.46e-04 | 217.8k tok/s | 40s
+step   1200 | loss 1.2880 | lr 4.12e-04 | 209.1k tok/s | 42s
+step   1250 | loss 1.2718 | lr 3.78e-04 | 217.2k tok/s | 44s
+  eval step   1250 | val_loss 1.4885 | val_bpb 2.1474 | acc 56.3% | 44s
+step   1300 | loss 1.2695 | lr 3.46e-04 | 216.9k tok/s | 46s
+step   1350 | loss 1.2661 | lr 3.15e-04 | 252.1k tok/s | 48s
+step   1400 | loss 1.2545 | lr 2.86e-04 | 302.0k tok/s | 49s
+step   1450 | loss 1.2481 | lr 2.58e-04 | 289.6k tok/s | 50s
+step   1500 | loss 1.2434 | lr 2.32e-04 | 252.6k tok/s | 52s
+  eval step   1500 | val_loss 1.4781 | val_bpb 2.1325 | acc 56.9% | 52s
+step   1550 | loss 1.2365 | lr 2.08e-04 | 218.0k tok/s | 54s
+step   1600 | loss 1.2350 | lr 1.86e-04 | 231.6k tok/s | 56s
+step   1650 | loss 1.2271 | lr 1.67e-04 | 233.0k tok/s | 57s
+step   1700 | loss 1.2189 | lr 1.49e-04 | 245.5k tok/s | 59s
+step   1750 | loss 1.2190 | lr 1.35e-04 | 226.8k tok/s | 61s
+  eval step   1750 | val_loss 1.4737 | val_bpb 2.1261 | acc 57.2% | 61s
+step   1800 | loss 1.2163 | lr 1.22e-04 | 226.3k tok/s | 63s
+step   1850 | loss 1.2099 | lr 1.13e-04 | 240.1k tok/s | 64s
+step   1900 | loss 1.2094 | lr 1.06e-04 | 241.2k tok/s | 66s
+step   1950 | loss 1.2031 | lr 1.01e-04 | 236.4k tok/s | 68s
+step   2000 | loss 1.2099 | lr 1.00e-04 | 239.5k tok/s | 69s
+  eval step   2000 | val_loss 1.4652 | val_bpb 2.1138 | acc 57.5% | 69s
+[final] val_loss 1.4652 | val_bpb 2.1138 | ppl 4.33 | acc 57.48% | 111,360 tokens, 1.00 bytes/token
+[sample]
+
+
+KING LEWIS XI:
+No, for the ready of Wants, my provokers and go
+And to command a watering plant as it,
+For thou and sigh from the princely clothes,
+But by any foolish presence for the bottom,
+Of an odds that did be not a past before
+Which doth say she before and were convey'd
+By consume to my flowers and do the fast,
+He sent his blood, clear'd friends that his world
+Writes of the one that far with
+
+[done] metrics -> C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 Assignments\LLM HW1\DeepDataMiningLearning\DeepDataMiningLearning\llm\outputs\nanolm\sweeps\char_models\gpt_modern_s42\metrics.json

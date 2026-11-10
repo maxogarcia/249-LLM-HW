@@ -1,0 +1,72 @@
+[run] C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 Assignments\LLM HW1\DeepDataMiningLearning\DeepDataMiningLearning\llm\outputs\nanolm\sweeps\my_context\gpt_modern_T256_s42
+[run] device: cuda (precision=bfloat16, compile=yes) | world_size=1
+C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 Assignments\LLM HW1\DeepDataMiningLearning\DeepDataMiningLearning\llm\nanolm\data.py:570: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  return (torch.tensor(base, dtype=torch.int32, device=device),
+[data] tinyshakespeare_char_tail100 | tokenizer=char vocab=65 | train 1,003,854 tok | val 111,540 tok
+[model] gpt: 3,162,624 params (3,145,984 non-embedding)
+[train] 2000 steps x 8,192 tokens/step (16.32 passes over train) | optimizer=adamw schedule=cosine
+step     50 | loss 3.0906 | lr 5.00e-04 | 120.2k tok/s | 3s
+step    100 | loss 2.3196 | lr 1.00e-03 | 139.5k tok/s | 6s
+step    150 | loss 1.9651 | lr 9.88e-04 | 165.6k tok/s | 9s
+step    200 | loss 1.7826 | lr 9.78e-04 | 189.8k tok/s | 11s
+step    250 | loss 1.6762 | lr 9.66e-04 | 152.6k tok/s | 14s
+  eval step    250 | val_loss 1.7529 | val_bpb 2.5289 | acc 48.1% | 14s
+step    300 | loss 1.6086 | lr 9.51e-04 | 125.6k tok/s | 17s
+step    350 | loss 1.5600 | lr 9.34e-04 | 160.5k tok/s | 19s
+step    400 | loss 1.5235 | lr 9.14e-04 | 159.3k tok/s | 22s
+step    450 | loss 1.4892 | lr 8.93e-04 | 198.4k tok/s | 24s
+step    500 | loss 1.4734 | lr 8.69e-04 | 198.4k tok/s | 26s
+  eval step    500 | val_loss 1.6120 | val_bpb 2.3256 | acc 52.3% | 26s
+step    550 | loss 1.4510 | lr 8.43e-04 | 179.0k tok/s | 28s
+step    600 | loss 1.4285 | lr 8.15e-04 | 190.8k tok/s | 31s
+step    650 | loss 1.4124 | lr 7.86e-04 | 182.6k tok/s | 33s
+step    700 | loss 1.3944 | lr 7.55e-04 | 175.0k tok/s | 35s
+step    750 | loss 1.3806 | lr 7.23e-04 | 194.1k tok/s | 37s
+  eval step    750 | val_loss 1.5579 | val_bpb 2.2476 | acc 54.0% | 37s
+step    800 | loss 1.3625 | lr 6.90e-04 | 192.5k tok/s | 39s
+step    850 | loss 1.3503 | lr 6.56e-04 | 188.9k tok/s | 42s
+step    900 | loss 1.3421 | lr 6.21e-04 | 191.9k tok/s | 44s
+step    950 | loss 1.3330 | lr 5.86e-04 | 171.9k tok/s | 46s
+step   1000 | loss 1.3257 | lr 5.51e-04 | 182.3k tok/s | 48s
+  eval step   1000 | val_loss 1.5188 | val_bpb 2.1911 | acc 55.3% | 48s
+step   1050 | loss 1.3011 | lr 5.15e-04 | 193.6k tok/s | 50s
+step   1100 | loss 1.3044 | lr 4.80e-04 | 242.8k tok/s | 52s
+step   1150 | loss 1.2922 | lr 4.46e-04 | 246.0k tok/s | 54s
+step   1200 | loss 1.2880 | lr 4.12e-04 | 222.3k tok/s | 56s
+step   1250 | loss 1.2728 | lr 3.78e-04 | 243.5k tok/s | 57s
+  eval step   1250 | val_loss 1.4948 | val_bpb 2.1565 | acc 56.3% | 57s
+step   1300 | loss 1.2697 | lr 3.46e-04 | 250.8k tok/s | 59s
+step   1350 | loss 1.2662 | lr 3.15e-04 | 259.8k tok/s | 61s
+step   1400 | loss 1.2541 | lr 2.86e-04 | 243.0k tok/s | 62s
+step   1450 | loss 1.2482 | lr 2.58e-04 | 247.5k tok/s | 64s
+step   1500 | loss 1.2440 | lr 2.32e-04 | 235.0k tok/s | 66s
+  eval step   1500 | val_loss 1.4799 | val_bpb 2.1350 | acc 56.9% | 66s
+step   1550 | loss 1.2368 | lr 2.08e-04 | 251.7k tok/s | 67s
+step   1600 | loss 1.2347 | lr 1.86e-04 | 250.3k tok/s | 69s
+step   1650 | loss 1.2272 | lr 1.67e-04 | 235.2k tok/s | 71s
+step   1700 | loss 1.2185 | lr 1.49e-04 | 241.0k tok/s | 72s
+step   1750 | loss 1.2188 | lr 1.35e-04 | 238.4k tok/s | 74s
+  eval step   1750 | val_loss 1.4734 | val_bpb 2.1256 | acc 57.3% | 74s
+step   1800 | loss 1.2156 | lr 1.22e-04 | 197.0k tok/s | 76s
+step   1850 | loss 1.2107 | lr 1.13e-04 | 227.3k tok/s | 78s
+step   1900 | loss 1.2096 | lr 1.06e-04 | 223.6k tok/s | 80s
+step   1950 | loss 1.2026 | lr 1.01e-04 | 215.1k tok/s | 82s
+step   2000 | loss 1.2101 | lr 1.00e-04 | 238.8k tok/s | 83s
+  eval step   2000 | val_loss 1.4653 | val_bpb 2.1140 | acc 57.4% | 83s
+[final] val_loss 1.4653 | val_bpb 2.1140 | ppl 4.33 | acc 57.41% | 111,360 tokens, 1.00 bytes/token
+[sample]
+
+
+KING LEWIS XI:
+No, my lord, I'll know not to the Volsces
+Must be made a dreamt of that God's love,
+And thou bend easier fament.
+
+First Lord Sly, then we say, for the prince,
+With curtain unitestrong as those streets
+To some good faithful day by than a fair sacraments
+The common consuls be such soldiers that villain
+So seek the house for that oft of the houses,
+Or through both our hands would with
+
+[done] metrics -> C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 Assignments\LLM HW1\DeepDataMiningLearning\DeepDataMiningLearning\llm\outputs\nanolm\sweeps\my_context\gpt_modern_T256_s42\metrics.json

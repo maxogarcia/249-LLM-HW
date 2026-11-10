@@ -1,0 +1,72 @@
+[run] C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 Assignments\LLM HW1\DeepDataMiningLearning\DeepDataMiningLearning\llm\outputs\nanolm\sweeps\char_models\gpt_textbook_s1337
+[run] device: cuda (precision=bfloat16, compile=yes) | world_size=1
+C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 Assignments\LLM HW1\DeepDataMiningLearning\DeepDataMiningLearning\llm\nanolm\data.py:570: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  return (torch.tensor(base, dtype=torch.int32, device=device),
+[data] tinyshakespeare_char_tail100 | tokenizer=char vocab=65 | train 1,003,854 tok | val 111,540 tok
+[model] gpt: 3,438,336 params (3,159,552 non-embedding)
+[train] 2000 steps x 8,192 tokens/step (16.32 passes over train) | optimizer=adamw schedule=cosine
+step     50 | loss 3.0528 | lr 5.00e-04 | 268.4k tok/s | 2s
+step    100 | loss 2.5291 | lr 1.00e-03 | 350.5k tok/s | 3s
+step    150 | loss 2.4719 | lr 9.88e-04 | 339.6k tok/s | 4s
+step    200 | loss 2.4302 | lr 9.78e-04 | 374.8k tok/s | 5s
+step    250 | loss 2.3742 | lr 9.66e-04 | 348.8k tok/s | 6s
+  eval step    250 | val_loss 2.3545 | val_bpb 3.3968 | acc 30.8% | 6s
+step    300 | loss 2.2971 | lr 9.51e-04 | 289.0k tok/s | 8s
+step    350 | loss 2.1957 | lr 9.34e-04 | 318.9k tok/s | 9s
+step    400 | loss 2.1005 | lr 9.14e-04 | 344.0k tok/s | 10s
+step    450 | loss 1.9981 | lr 8.93e-04 | 347.6k tok/s | 11s
+step    500 | loss 1.9105 | lr 8.69e-04 | 328.1k tok/s | 12s
+  eval step    500 | val_loss 1.9359 | val_bpb 2.7930 | acc 42.5% | 12s
+step    550 | loss 1.8360 | lr 8.43e-04 | 306.7k tok/s | 14s
+step    600 | loss 1.7866 | lr 8.15e-04 | 236.5k tok/s | 16s
+step    650 | loss 1.7364 | lr 7.86e-04 | 305.8k tok/s | 17s
+step    700 | loss 1.6952 | lr 7.55e-04 | 298.4k tok/s | 18s
+step    750 | loss 1.6645 | lr 7.23e-04 | 384.2k tok/s | 19s
+  eval step    750 | val_loss 1.7334 | val_bpb 2.5007 | acc 48.3% | 19s
+step    800 | loss 1.6249 | lr 6.90e-04 | 240.0k tok/s | 21s
+step    850 | loss 1.5962 | lr 6.56e-04 | 243.3k tok/s | 23s
+step    900 | loss 1.5666 | lr 6.21e-04 | 260.8k tok/s | 24s
+step    950 | loss 1.5504 | lr 5.86e-04 | 267.5k tok/s | 26s
+step   1000 | loss 1.5347 | lr 5.51e-04 | 264.1k tok/s | 27s
+  eval step   1000 | val_loss 1.6475 | val_bpb 2.3769 | acc 50.7% | 27s
+step   1050 | loss 1.5168 | lr 5.15e-04 | 236.7k tok/s | 29s
+step   1100 | loss 1.4951 | lr 4.80e-04 | 228.8k tok/s | 31s
+step   1150 | loss 1.4749 | lr 4.46e-04 | 255.5k tok/s | 32s
+step   1200 | loss 1.4663 | lr 4.12e-04 | 226.3k tok/s | 34s
+step   1250 | loss 1.4561 | lr 3.78e-04 | 248.0k tok/s | 36s
+  eval step   1250 | val_loss 1.5851 | val_bpb 2.2869 | acc 52.8% | 36s
+step   1300 | loss 1.4377 | lr 3.46e-04 | 238.2k tok/s | 38s
+step   1350 | loss 1.4291 | lr 3.15e-04 | 237.8k tok/s | 39s
+step   1400 | loss 1.4200 | lr 2.86e-04 | 240.3k tok/s | 41s
+step   1450 | loss 1.4090 | lr 2.58e-04 | 275.7k tok/s | 43s
+step   1500 | loss 1.3999 | lr 2.32e-04 | 285.3k tok/s | 44s
+  eval step   1500 | val_loss 1.5448 | val_bpb 2.2287 | acc 53.9% | 44s
+step   1550 | loss 1.3917 | lr 2.08e-04 | 278.1k tok/s | 46s
+step   1600 | loss 1.3903 | lr 1.86e-04 | 256.6k tok/s | 47s
+step   1650 | loss 1.3831 | lr 1.67e-04 | 279.2k tok/s | 49s
+step   1700 | loss 1.3723 | lr 1.49e-04 | 248.0k tok/s | 50s
+step   1750 | loss 1.3660 | lr 1.35e-04 | 254.0k tok/s | 52s
+  eval step   1750 | val_loss 1.5175 | val_bpb 2.1893 | acc 54.6% | 52s
+step   1800 | loss 1.3627 | lr 1.22e-04 | 217.6k tok/s | 54s
+step   1850 | loss 1.3537 | lr 1.13e-04 | 246.8k tok/s | 55s
+step   1900 | loss 1.3606 | lr 1.06e-04 | 221.9k tok/s | 57s
+step   1950 | loss 1.3545 | lr 1.01e-04 | 222.9k tok/s | 59s
+step   2000 | loss 1.3448 | lr 1.00e-04 | 253.3k tok/s | 61s
+  eval step   2000 | val_loss 1.5085 | val_bpb 2.1763 | acc 54.8% | 61s
+[final] val_loss 1.5085 | val_bpb 2.1763 | ppl 4.52 | acc 54.79% | 111,360 tokens, 1.00 bytes/token
+[sample]
+
+CORIOLANUS:
+The Eeybalt's life and thou art speak thy house, with this
+make no himself fair grace and yet us shall come too provost?
+
+KING HENRY VI:
+And who is thy comfort, then thy shape,
+Which to be there those in here, my lord
+Of thousand most blood passage of their love;
+And way world his life father. Yet, as yours do tongue thee.
+And therefore is your gracious grace and leave our ship?
+
+QUEEN
+
+[done] metrics -> C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 Assignments\LLM HW1\DeepDataMiningLearning\DeepDataMiningLearning\llm\outputs\nanolm\sweeps\char_models\gpt_textbook_s1337\metrics.json

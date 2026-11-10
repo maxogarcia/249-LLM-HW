@@ -1,0 +1,18 @@
+{
+ "name": "smoke",
+ "seed": 1337,
+ "date": "2026-11-06T21:41:03",
+ "git": {
+  "commit": "8418fc1bae85657190f11749483bf2e729b9702c",
+  "branch": "main",
+  "dirty": true
+ },
+ "host": "Max-Laptop",
+ "platform": "Windows-10-10.0.26300-SP0",
+ "python": "3.11.9",
+ "torch": "2.11.0+cu128",
+ "device": "cuda (precision=bfloat16, compile=yes)",
+ "world_size": 1,
+ "command": "C:\\Users\\maxog\\Documents\\SJSU material\\CMPE 249\\CMPE 249 Assignments\\LLM HW1\\DeepDataMiningLearning\\DeepDataMiningLearning\\llm\\nanolm\\train.py -c nanolm/configs/00_smoke.yaml",
+ "tags": []
+}

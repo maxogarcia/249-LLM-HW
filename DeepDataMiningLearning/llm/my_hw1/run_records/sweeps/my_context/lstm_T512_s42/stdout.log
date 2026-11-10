@@ -1,0 +1,72 @@
+[run] C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 Assignments\LLM HW1\DeepDataMiningLearning\DeepDataMiningLearning\llm\outputs\nanolm\sweeps\my_context\lstm_T512_s42
+[run] device: cuda (precision=bfloat16, compile=yes) | world_size=1
+C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 Assignments\LLM HW1\DeepDataMiningLearning\DeepDataMiningLearning\llm\nanolm\data.py:570: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:39.)
+  return (torch.tensor(base, dtype=torch.int32, device=device),
+[data] tinyshakespeare_char_tail100 | tokenizer=char vocab=65 | train 1,003,854 tok | val 111,540 tok
+[model] lstm: 1,069,824 params (1,053,184 non-embedding)
+[train] 2000 steps x 8,192 tokens/step (16.32 passes over train) | optimizer=adamw schedule=cosine
+step     50 | loss 3.5096 | lr 1.00e-03 | 111.1k tok/s | 4s
+step    100 | loss 2.6517 | lr 2.00e-03 | 130.3k tok/s | 7s
+step    150 | loss 2.2522 | lr 1.98e-03 | 143.3k tok/s | 10s
+step    200 | loss 2.0769 | lr 1.96e-03 | 147.5k tok/s | 12s
+step    250 | loss 1.9498 | lr 1.93e-03 | 139.8k tok/s | 15s
+  eval step    250 | val_loss 1.9400 | val_bpb 2.7989 | acc 42.2% | 15s
+step    300 | loss 1.8419 | lr 1.90e-03 | 132.5k tok/s | 18s
+step    350 | loss 1.7548 | lr 1.87e-03 | 119.7k tok/s | 22s
+step    400 | loss 1.6937 | lr 1.83e-03 | 99.0k tok/s | 26s
+step    450 | loss 1.6364 | lr 1.79e-03 | 114.8k tok/s | 30s
+step    500 | loss 1.5821 | lr 1.74e-03 | 124.5k tok/s | 33s
+  eval step    500 | val_loss 1.6857 | val_bpb 2.4320 | acc 49.9% | 33s
+step    550 | loss 1.5573 | lr 1.69e-03 | 106.7k tok/s | 37s
+step    600 | loss 1.5053 | lr 1.63e-03 | 87.1k tok/s | 41s
+step    650 | loss 1.4832 | lr 1.57e-03 | 116.7k tok/s | 45s
+step    700 | loss 1.4682 | lr 1.51e-03 | 124.3k tok/s | 48s
+step    750 | loss 1.4487 | lr 1.45e-03 | 113.3k tok/s | 52s
+  eval step    750 | val_loss 1.5763 | val_bpb 2.2742 | acc 52.9% | 52s
+step    800 | loss 1.4269 | lr 1.38e-03 | 115.7k tok/s | 55s
+step    850 | loss 1.4143 | lr 1.31e-03 | 124.1k tok/s | 59s
+step    900 | loss 1.3985 | lr 1.24e-03 | 122.0k tok/s | 62s
+step    950 | loss 1.3844 | lr 1.17e-03 | 148.9k tok/s | 65s
+step   1000 | loss 1.3719 | lr 1.10e-03 | 160.1k tok/s | 67s
+  eval step   1000 | val_loss 1.5274 | val_bpb 2.2036 | acc 54.7% | 67s
+step   1050 | loss 1.3689 | lr 1.03e-03 | 115.9k tok/s | 71s
+step   1100 | loss 1.3592 | lr 9.61e-04 | 110.1k tok/s | 75s
+step   1150 | loss 1.3461 | lr 8.91e-04 | 101.1k tok/s | 79s
+step   1200 | loss 1.3338 | lr 8.23e-04 | 113.8k tok/s | 82s
+step   1250 | loss 1.3236 | lr 7.57e-04 | 129.7k tok/s | 85s
+  eval step   1250 | val_loss 1.5054 | val_bpb 2.1718 | acc 55.3% | 85s
+step   1300 | loss 1.3308 | lr 6.93e-04 | 172.5k tok/s | 88s
+step   1350 | loss 1.3139 | lr 6.31e-04 | 170.5k tok/s | 90s
+step   1400 | loss 1.3144 | lr 5.72e-04 | 171.4k tok/s | 93s
+step   1450 | loss 1.3085 | lr 5.17e-04 | 116.4k tok/s | 96s
+step   1500 | loss 1.2959 | lr 4.65e-04 | 115.2k tok/s | 100s
+  eval step   1500 | val_loss 1.4908 | val_bpb 2.1507 | acc 55.6% | 100s
+step   1550 | loss 1.3015 | lr 4.17e-04 | 89.3k tok/s | 104s
+step   1600 | loss 1.3008 | lr 3.73e-04 | 82.2k tok/s | 109s
+step   1650 | loss 1.2948 | lr 3.33e-04 | 111.3k tok/s | 113s
+step   1700 | loss 1.2852 | lr 2.99e-04 | 134.7k tok/s | 116s
+step   1750 | loss 1.2909 | lr 2.69e-04 | 126.0k tok/s | 119s
+  eval step   1750 | val_loss 1.4788 | val_bpb 2.1334 | acc 56.2% | 119s
+step   1800 | loss 1.2891 | lr 2.44e-04 | 156.6k tok/s | 122s
+step   1850 | loss 1.2908 | lr 2.25e-04 | 131.8k tok/s | 125s
+step   1900 | loss 1.2858 | lr 2.11e-04 | 146.8k tok/s | 128s
+step   1950 | loss 1.2886 | lr 2.03e-04 | 110.1k tok/s | 131s
+step   2000 | loss 1.2835 | lr 2.00e-04 | 108.3k tok/s | 135s
+  eval step   2000 | val_loss 1.4750 | val_bpb 2.1280 | acc 56.3% | 135s
+[final] val_loss 1.4750 | val_bpb 2.1280 | ppl 4.37 | acc 56.26% | 111,104 tokens, 1.00 bytes/token
+[sample]
+
+That thou art days to be consunt, and they so fear
+The lady course his common take that God,
+When I have been an
+cerement
+To common the need flord, though and for the prince,
+With thus thy cheeks may came to die: a purpose
+Of the gone of the crown and thing o' the store
+To the queen's be a man;-- but thou wilt wear'd.
+
+JULIET:
+My lord, command this house of state to
+Bring both gates, the did out o
+
+[done] metrics -> C:\Users\maxog\Documents\SJSU material\CMPE 249\CMPE 249 Assignments\LLM HW1\DeepDataMiningLearning\DeepDataMiningLearning\llm\outputs\nanolm\sweeps\my_context\lstm_T512_s42\metrics.json

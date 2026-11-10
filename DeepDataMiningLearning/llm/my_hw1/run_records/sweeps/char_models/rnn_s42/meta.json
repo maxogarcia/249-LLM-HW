@@ -1,0 +1,20 @@
+{
+ "name": "rnn",
+ "seed": 42,
+ "date": "2026-11-05T23:26:41",
+ "git": {
+  "commit": "8418fc1bae85657190f11749483bf2e729b9702c",
+  "branch": "main",
+  "dirty": false
+ },
+ "host": "Max-Laptop",
+ "platform": "Windows-10-10.0.26300-SP0",
+ "python": "3.11.9",
+ "torch": "2.11.0+cu128",
+ "device": "cuda (precision=bfloat16, compile=yes)",
+ "world_size": 1,
+ "command": "C:\\Users\\maxog\\Documents\\SJSU material\\CMPE 249\\CMPE 249 Assignments\\LLM HW1\\DeepDataMiningLearning\\DeepDataMiningLearning\\llm\\nanolm\\train.py --config C:\\Users\\maxog\\Documents\\SJSU material\\CMPE 249\\CMPE 249 Assignments\\LLM HW1\\DeepDataMiningLearning\\DeepDataMiningLearning\\llm\\nanolm\\configs\\02_char_transformer.yaml train.max_steps=2000 train.seq_len=256 train.batch_size=32 model.arch=\"rnn\" model.n_layers=2 model.dim=256 train.lr=\"2e-3\" train.weight_decay=0.0 name=rnn seed=42 run_dir=C:\\Users\\maxog\\Documents\\SJSU material\\CMPE 249\\CMPE 249 Assignments\\LLM HW1\\DeepDataMiningLearning\\DeepDataMiningLearning\\llm\\outputs\\nanolm\\sweeps\\char_models\\rnn_s42 tags=[\"char_models\"]",
+ "tags": [
+  "char_models"
+ ]
+}
