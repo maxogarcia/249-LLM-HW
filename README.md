@@ -2,11 +2,7 @@
 
 > **Comprehensive collection of data mining, machine learning, and deep learning sample codes and tutorials**
 
-This repository contains educational materials and practical implementations for:
-- **SJSU CMPE255** - Data Mining
-- **SJSU CMPE257** - Machine Learning  
-- **SJSU CMPE258** - Deep Learning
-- **SJSU CMPE249** - Intelligent Autonomous Systems
+This repository contains educational materials and practical implementations for **SJSU CMPE249** - Intelligent Autonomous Systems
 
 ## 🌟 Features
 
